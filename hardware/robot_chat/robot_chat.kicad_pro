@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -55,7 +55,11 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "starved_thermal|119750000|88550000|ea14d794-ba96-4ef6-915f-2f4863edcc53|fc747383-97fa-4090-98b3-dc4dc56d9255|F.Cu",
+        "starved_thermal|86605200|56683000|ea14d794-ba96-4ef6-915f-2f4863edcc53|c3498a77-2be3-4845-8654-554713974c57|F.Cu",
+        "starved_thermal|86805600|58486400|ea14d794-ba96-4ef6-915f-2f4863edcc53|66058276-f312-4395-a60e-46f8af31d942|F.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -176,6 +180,7 @@
         0.3,
         0.4,
         0.5,
+        1.7,
         2.5,
         3.0
       ],
@@ -199,7 +204,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "lib_symbol_issues|584200|304800|142d5350-e319-449a-a8df-6547432264a8|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|482600|266700|9fe5695b-7849-47c1-95fc-cbcfe729ba77|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|508000|635000|f2c5b8ce-b699-4060-866e-c08ee7aa3246|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|584200|393700|5667af49-89d6-4662-aeec-52803dec1b5c|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
